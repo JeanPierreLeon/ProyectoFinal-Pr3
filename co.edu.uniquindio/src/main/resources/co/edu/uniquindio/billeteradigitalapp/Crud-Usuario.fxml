@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="867.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.billeteradigitalapp.ViewController.Usuario_ViewController">
+    <children>
+        <!-- Fondo decorativo -->
+        <ImageView fitHeight="867.0" fitWidth="1450.0" layoutX="-284.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/negromadera.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- Panel principal de usuario -->
+        <AnchorPane layoutX="77.0" layoutY="60.0" prefHeight="300.0" prefWidth="950.0" style="-fx-background-color: #262525; -fx-background-radius: 25;">
+            <children>
+                <!-- Título -->
+                <Label layoutX="50.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="GESTIÓN DE USUARIOS" textFill="WHITE" />
+                <AnchorPane layoutX="50.0" layoutY="60.0" prefHeight="4.0" prefWidth="850.0" style="-fx-background-color: #FB2222;" />
+
+                <!-- Campos de texto -->
+                <Label layoutX="50.0" layoutY="80.0" text="Nombre Completo:" textFill="WHITE" />
+                <TextField fx:id="txtNombre" layoutX="200.0" layoutY="80.0" prefHeight="30.0" prefWidth="300.0" promptText="Ingrese el nombre completo" />
+
+                <Label layoutX="50.0" layoutY="130.0" text="Cedula:" textFill="WHITE" />
+                <TextField fx:id="txtCedula" layoutX="200.0" layoutY="130.0" prefHeight="30.0" prefWidth="300.0" promptText="Ingrese la Cedula" />
+
+                <Label layoutX="50.0" layoutY="180.0" text="Teléfono:" textFill="WHITE" />
+                <TextField fx:id="txtTelefono" layoutX="200.0" layoutY="180.0" prefHeight="30.0" prefWidth="300.0" promptText="Ingrese el telefono" />
+
+                <Label layoutX="531.0" layoutY="87.0" text="Correo:" textFill="WHITE" />
+                <TextField fx:id="txtCorreo" layoutX="600.0" layoutY="80.0" prefHeight="30.0" prefWidth="300.0" promptText="Ingrese el correo" />
+
+                <Label layoutX="524.0" layoutY="139.0" text="Dirección:" textFill="WHITE" />
+                <TextField fx:id="txtDireccion" layoutX="600.0" layoutY="130.0" prefHeight="30.0" prefWidth="300.0" promptText="Ingrese la direccion" />
+
+                <!-- Botones -->
+                <Button fx:id="btnCrear" layoutX="150.0" layoutY="240.0" onAction="#onCrear" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #FB2222; -fx-text-fill: white; -fx-background-radius: 15;" text="Crear" />
+                <Button fx:id="btnActualizar" layoutX="300.0" layoutY="240.0" onAction="#onActualizar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 15;" text="Actualizar" />
+                <Button fx:id="btnEliminar" layoutX="450.0" layoutY="240.0" onAction="#onEliminar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #FF5722; -fx-text-fill: white; -fx-background-radius: 15;" text="Eliminar" />
+      
+              <!-- Icono decorativo -->
+              <ImageView fitHeight="120.0" fitWidth="205.0" layoutX="690.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/user1.png" />
+                  </image>
+              </ImageView>
+            </children>
+        </AnchorPane>
+
+        <!-- Contenedor para la TableView -->
+        <AnchorPane layoutX="102.0" layoutY="401.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #262525; -fx-background-radius: 25;">
+            <children>
+                <TableView fx:id="TableViewUsuarios" layoutX="20.0" layoutY="20.0" prefHeight="360.0" prefWidth="860.0" style="-fx-background-color: #ffffff; -fx-border-color: #dcdcdc;">
+                    <columns>
+                        <TableColumn fx:id="tcNombre" prefWidth="150.0" text="Nombre" />
+                        <TableColumn fx:id="tcCedula" prefWidth="150.0" text="Cedula" />
+                        <TableColumn fx:id="tcTelefono" prefWidth="150.0" text="Telefono" />
+                        <TableColumn fx:id="tcCorreo" prefWidth="176.0" text="Correo" />
+                        <TableColumn fx:id="tcDireccion" prefWidth="232.0" text="Dirección" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

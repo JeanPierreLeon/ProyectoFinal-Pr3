@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.billeteradigitalapp.ViewController.EditarPerfil_ViewController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="15.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0"
+          AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="50.0">
+
+        <!-- Etiqueta del título -->
+        <Label text="Editar Perfil" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+        <!-- Campo para ingresar el nombre -->
+        <TextField fx:id="nombreField" promptText="Nombre completo" />
+
+        <!-- Campo para ingresar el correo -->
+        <TextField fx:id="correoField" promptText="Correo electrónico" />
+
+        <!-- Campo para ingresar el teléfono -->
+        <TextField fx:id="telefonoField" promptText="Número de teléfono" />
+
+        <!-- Botones para guardar o cancelar -->
+        <HBox alignment="CENTER" spacing="20.0">
+            <Button text="Guardar" fx:id="guardarButton" onAction="#guardarCambios" />
+            <Button text="Cancelar" fx:id="cancelarButton" onAction="#cancelarEdicion" />
+        </HBox>
+    </VBox>
+</AnchorPane>

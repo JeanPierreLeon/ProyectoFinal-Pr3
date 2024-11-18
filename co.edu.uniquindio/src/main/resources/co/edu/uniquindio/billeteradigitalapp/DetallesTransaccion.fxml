@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22"
+            fx:controller="co.edu.uniquindio.billeteradigitalapp.ViewController.DetallesTransaccion_ViewController"
+            prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #262525;">
+    <children>
+        <Label layoutX="50.0" layoutY="30.0" text="Detalles de la Transacción" style="-fx-font-size: 18; -fx-text-fill: white;"/>
+
+        <Label layoutX="50.0" layoutY="80.0" text="Tipo:" textFill="white"/>
+        <TextField fx:id="txtTipo" layoutX="150.0" layoutY="75.0" prefWidth="200.0" editable="false"/>
+
+        <Label layoutX="50.0" layoutY="120.0" text="Monto:" textFill="white"/>
+        <TextField fx:id="txtMonto" layoutX="150.0" layoutY="115.0" prefWidth="200.0" editable="false"/>
+
+        <Label layoutX="50.0" layoutY="160.0" text="Descripción:" textFill="white"/>
+        <TextField fx:id="txtDescripcion" layoutX="150.0" layoutY="155.0" prefWidth="200.0" editable="false"/>
+
+        <Label layoutX="50.0" layoutY="200.0" text="Fecha:" textFill="white"/>
+        <TextField fx:id="txtFecha" layoutX="150.0" layoutY="195.0" prefWidth="200.0" editable="false"/>
+
+        <Button layoutX="150.0" layoutY="250.0" text="Cerrar" onAction="#OnbtnCerrar" style="-fx-background-color: #3498db; -fx-text-fill: white;"/>
+    </children>
+</AnchorPane>

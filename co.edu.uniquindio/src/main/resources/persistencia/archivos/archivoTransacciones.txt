@@ -1,0 +1,5 @@
+Deposito/15000.0/Viajes y mas./23/07/2024
+Retiro/27000.0/Viajes y mas./17/08/2024
+Deposito/10000.0/Envio Dinero/2024-11-18
+Deposito/10000.0/Envio Dinero/2024-11-18
+Deposito/20000.0/Comida/17-12-2024

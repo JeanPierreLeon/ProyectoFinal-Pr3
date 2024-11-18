@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="882.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.billeteradigitalapp.ViewController.Administrador_ViewController">
+   <children>
+      <TabPane prefHeight="882.0" prefWidth="1106.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="USUARIOS">
+               <content>
+                  <fx:include source="Crud-Usuario.fxml" />
+               </content>
+            </Tab>
+          <Tab text="CUENTAS">
+               <content>
+                  <fx:include source="Crud-Cuenta.fxml" />
+               </content>
+            </Tab>
+            <Tab text="CATEGORIAS">
+               <content>
+                  <fx:include source="Crud-Categoria.fxml" />
+               </content>
+            </Tab>
+            <Tab text="PRESUPUESTOS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="Crud-Presupuesto.fxml" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="TRANSACCIONES">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="Crud-Transaccion.fxml" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

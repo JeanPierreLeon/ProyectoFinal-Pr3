@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="21.0.5" class="java.beans.XMLDecoder">
+ <object class="co.edu.uniquindio.billeteradigitalapp.Model.BilleteraDigital" id="BilleteraDigital0">
+  <void property="categorias">
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Categoria" id="Categoria0">
+     <void property="descripcion">
+      <string>Viajes y mas.</string>
+     </void>
+     <void property="idCategoria">
+      <string>1</string>
+     </void>
+     <void property="nombre">
+      <string>Transporte</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Categoria">
+     <void property="descripcion">
+      <string></string>
+     </void>
+     <void property="idCategoria">
+      <string>2</string>
+     </void>
+     <void property="nombre">
+      <string>Comida</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="cuentas">
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Cuenta" id="Cuenta0">
+     <void property="nombreBanco">
+      <string>Bancolombia</string>
+     </void>
+     <void property="numeroCuenta">
+      <int>14131313</int>
+     </void>
+     <void property="tipoCuenta">
+      <string>Ahorro</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Cuenta" id="Cuenta1">
+     <void property="nombreBanco">
+      <string>Nequi</string>
+     </void>
+     <void property="numeroCuenta">
+      <int>111</int>
+     </void>
+     <void property="saldo">
+      <double>20000.0</double>
+     </void>
+     <void property="tipoCuenta">
+      <string>Ahorro</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Cuenta" id="Cuenta2">
+     <void property="nombreBanco">
+      <string>WalletLink</string>
+     </void>
+     <void property="numeroCuenta">
+      <int>123456</int>
+     </void>
+     <void property="saldo">
+      <double>80000.0</double>
+     </void>
+     <void property="tipoCuenta">
+      <string>Ahorro</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="presupuestos">
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Presupuesto">
+     <void property="categoria">
+      <object idref="Categoria0"/>
+     </void>
+     <void property="idPresupuesto">
+      <int>1</int>
+     </void>
+     <void property="montoTotalAsignado">
+      <double>15000.0</double>
+     </void>
+     <void property="nombre">
+      <string>Transporte Mes</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="transacciones">
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Transaccion">
+     <void property="categoria">
+      <object idref="Categoria0"/>
+     </void>
+     <void property="cuentaDestino">
+      <object idref="Cuenta1"/>
+     </void>
+     <void property="cuentaOrigen">
+      <object idref="Cuenta0"/>
+     </void>
+     <void property="descripcionTransaccion">
+      <string>Viajes y mas.</string>
+     </void>
+     <void property="fecha">
+      <string>23/07/2024</string>
+     </void>
+     <void property="idTransaccion">
+      <int>1</int>
+     </void>
+     <void property="monto">
+      <double>15000.0</double>
+     </void>
+     <void property="tipoTransaccion">
+      <string>Deposito</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Transaccion">
+     <void property="categoria">
+      <object idref="Categoria0"/>
+     </void>
+     <void property="cuentaDestino">
+      <object idref="Cuenta1"/>
+     </void>
+     <void property="cuentaOrigen">
+      <object idref="Cuenta0"/>
+     </void>
+     <void property="descripcionTransaccion">
+      <string>Viajes y mas.</string>
+     </void>
+     <void property="fecha">
+      <string>17/08/2024</string>
+     </void>
+     <void property="idTransaccion">
+      <int>2</int>
+     </void>
+     <void property="monto">
+      <double>27000.0</double>
+     </void>
+     <void property="tipoTransaccion">
+      <string>Retiro</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Transaccion">
+     <void property="cuentaDestino">
+      <object idref="Cuenta1"/>
+     </void>
+     <void property="cuentaOrigen">
+      <object idref="Cuenta2"/>
+     </void>
+     <void property="descripcionTransaccion">
+      <string>Envio Dinero</string>
+     </void>
+     <void property="fecha">
+      <string>2024-11-18</string>
+     </void>
+     <void property="idTransaccion">
+      <int>3</int>
+     </void>
+     <void property="monto">
+      <double>10000.0</double>
+     </void>
+     <void property="tipoTransaccion">
+      <string>Deposito</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Transaccion">
+     <void property="cuentaDestino">
+      <object idref="Cuenta1"/>
+     </void>
+     <void property="cuentaOrigen">
+      <object idref="Cuenta2"/>
+     </void>
+     <void property="descripcionTransaccion">
+      <string>Envio Dinero</string>
+     </void>
+     <void property="fecha">
+      <string>2024-11-18</string>
+     </void>
+     <void property="idTransaccion">
+      <int>4</int>
+     </void>
+     <void property="monto">
+      <double>10000.0</double>
+     </void>
+     <void property="tipoTransaccion">
+      <string>Deposito</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Transaccion">
+     <void property="descripcionTransaccion">
+      <string>Comida</string>
+     </void>
+     <void property="fecha">
+      <string>17-12-2024</string>
+     </void>
+     <void property="idTransaccion">
+      <int>5</int>
+     </void>
+     <void property="monto">
+      <double>20000.0</double>
+     </void>
+     <void property="tipoTransaccion">
+      <string>Deposito</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="usuarios">
+   <void method="add">
+    <object class="co.edu.uniquindio.billeteradigitalapp.Model.Usuario" id="Usuario0">
+     <void property="correo">
+      <string>jhon@gmail.com</string>
+     </void>
+     <void property="cuentasAsociadas">
+      <void method="add">
+       <object idref="Cuenta0"/>
+      </void>
+      <void method="add">
+       <object idref="Cuenta2"/>
+      </void>
+     </void>
+     <void property="direccion">
+      <string>Calle 65 #89-09</string>
+     </void>
+     <void property="idUsuario">
+      <string>111</string>
+     </void>
+     <void property="nombre">
+      <string>Jhon</string>
+     </void>
+     <void property="telefono">
+      <string>300671376</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
